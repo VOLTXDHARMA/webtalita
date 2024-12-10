@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-screen" class="center-screen screen">
+        <h1>Selamat Datang Talita</h1>
+        <form id="user-form">
+            <label for="name">Masukkan Nama:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="photo">Unggah Foto:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <button type="submit">Lanjutkan</button>
+        </form>
+    </div>
+    
+    <div id="main-screen" class="hidden screen">
+        <h2 id="greeting"></h2>
+        <img id="user-photo" src="" alt="User Image" class="user-image">
+        <p class="bordered">Apa nanti mau jalan?</p>
+        <div class="buttons">
+            <button id="no-button">Tidak!</button>
+            <button id="yes-button">Iya</button>
+        </div>
+        <p id="thanks-message" class="hidden bordered">Terima kasih! uda mau jalan</p>
+    </div>
+
+    <div id="final-screen" class="hidden screen">
+        <h1>Terima Kasih ya talita</h1>
+        <p>Ditunggu di harinya</p>
+        <div class="flower-container">
+            <div class="flower"></div>
+            <div class="flower"></div>
+            <div class="flower"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
